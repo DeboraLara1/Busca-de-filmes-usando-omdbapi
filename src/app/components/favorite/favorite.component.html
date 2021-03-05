@@ -1,0 +1,20 @@
+<h3>Favoritos: </h3>
+<div class="col row">
+  <div class=" col-sm-4" *ngFor="let favorite of selectedFilms">
+    <div class="card col order-last">
+      <img class="card-img-top" [src]="favorite.Poster" alt="Imagem de capa do filme">
+      <div class="card-body">
+        <h4 class="card-title">
+          {{favorite.Title}}
+          <span>{{favorite.Year}}</span>
+        </h4>
+        <strong>Idiomas</strong>
+        <p>{{favorite.Language}}</p>
+        <strong>Gênero:</strong>
+        <p>{{favorite.Genre}}</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row"></div>

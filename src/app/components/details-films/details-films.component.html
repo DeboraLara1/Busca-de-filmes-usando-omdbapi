@@ -1,0 +1,34 @@
+<div class="row">
+  <div class="col-sm-6 ">
+    <div class="detalhes">
+      <h3>{{details.__zone_symbol__value.Title}}
+        <span>{{details.__zone_symbol__value.Year}}</span>
+      </h3>
+      <strong>Gênero:</strong>
+      <p>{{details.__zone_symbol__value.Genre}}</p>
+      <strong>Idiomas:</strong>
+      <p>{{details.__zone_symbol__value.Language}}</p>
+      <strong>Diretor:</strong>
+      <p>{{details.__zone_symbol__value.Director}}</p>
+      <strong>Atores</strong>
+      <p>{{details.__zone_symbol__value.Actors}}</p>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <img [src]="details.__zone_symbol__value.Poster" alt="" style="max-height: 300px;padding-left: 20%;">
+  </div>
+</div>
+<div class="row" style="padding: 5%;">
+  <div class="col-sm-6">
+    <h3>Leia a sinopse</h3>
+    <p style="margin-left: 20px;">{{details.__zone_symbol__value.Plot}}</p>
+  </div>
+  <div class="col-sm-6">
+    <h3>Escritor</h3>
+    <p style="margin-left: 20px;">{{details.__zone_symbol__value.Writer}}</p>
+  </div>
+</div>
+<div class="row justify-content-md-center">
+  <a href="searchFilms" class="saber-mais">Pesquise outro filme </a>
+  <button class="button" (click)="setSelectedFilm(details.__zone_symbol__value)" class="saber-mais">Favorito <i class="bi bi-heart"></i> </button>
+</div>

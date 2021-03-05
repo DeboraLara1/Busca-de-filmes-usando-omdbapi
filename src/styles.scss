@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+.saber-mais{
+  color: white;
+  text-decoration: none;
+  background-color: #b71c1c;
+  border: 2px solid white;
+  margin: 3%;
+  padding: 5px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 200ms;
+  white-space: nowrap;
+}
+
+.saber-mais:hover{
+    background-color: rgba(0, 0, 0, .4);
+    text-decoration: none;
+    color: #b71c1c;
+}
